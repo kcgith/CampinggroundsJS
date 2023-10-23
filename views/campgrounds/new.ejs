@@ -2,22 +2,22 @@
 <div class="row">
     <h1 class="text-center">New Campground</h1>
     <div class="col-6 offset-3">
-        <form action="/campgrounds"= method="POST">
+        <form action="/campgrounds"= method="POST" novalidate class="needs-validation">
             <div class="mb-3">
                 <label class="form-label" for="title">Title</label>
-                <input class="form-control"type="text" id="title" name="campground[title]">
+                <input class="form-control"type="text" id="title" name="campground[title]" required>
             </div>
             <div class="mb-2">
                 <label class="form-label"for="location">Location</label>
-                <input class="form-control"type="text" id="location" name="campground[location]">
+                <input class="form-control"type="text" id="location" name="campground[location]" required>
             </div>
             <div class="mb-2">
                 <label class="form-label"for="image">Image url</label>
-                <input class="form-control"type="text" id="location" name="campground[image]">
+                <input class="form-control"type="text" id="location" name="campground[image]" required>
             </div>
             <div class="mb-2">
                 <label class="form-label"for="description">Description</label>
-                <textarea class="form-control"type="text" id="location" name="campground[description]"></textarea>
+                <textarea class="form-control"type="text" id="location" name="campground[description]"></textarea required>
             </div>
             
             <div class="mb-4 mt-3"><button class="btn btn-success">ADD CAMPGROUND</button></div>
@@ -25,3 +25,6 @@
         <a class="nav-link" href="/campgrounds"> All Campgrounds</a>
     </div>  
 </div>
+
+
+  
